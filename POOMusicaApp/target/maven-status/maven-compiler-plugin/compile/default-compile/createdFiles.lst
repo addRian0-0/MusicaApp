@@ -1,3 +1,6 @@
 interfaces/Inicio.class
+bd/ConexionMySQL.class
+interfaces/Inicio$2.class
 interfaces/Inicio$1.class
+interfaces/Inicio$3.class
 com/mycompany/poomusicaapp/POOMusicaApp.class
