@@ -4,7 +4,7 @@
 
 package com.mycompany.poomusicaapp;
 
-import bd.ConexionMySQL;
+import SQL.conexion;
 import interfaces.Inicio;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -22,8 +22,6 @@ public class POOMusicaApp {
         Inicio inicioScreen = new Inicio();
         inicioScreen.setVisible(true);
         inicioScreen.setLocationRelativeTo(null);
-
-        Connection conn = ConexionMySQL.getConnection();  // Aquí usas la clase externa
 
     }
 }

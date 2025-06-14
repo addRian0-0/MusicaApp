@@ -2,7 +2,7 @@
 .env
 *.iml
 .idea/
-target/
+POOMusicaApp/target/
 
 # Ignora otros archivos temporales
 *.log
