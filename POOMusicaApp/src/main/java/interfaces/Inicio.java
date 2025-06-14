@@ -124,6 +124,13 @@ public class Inicio extends javax.swing.JFrame {
 
     private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
         
+        MainApp mainScreen = new MainApp();
+        
+        this.dispose();
+        
+        mainScreen.setVisible(true);
+        mainScreen.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnIniciarSesionActionPerformed
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed

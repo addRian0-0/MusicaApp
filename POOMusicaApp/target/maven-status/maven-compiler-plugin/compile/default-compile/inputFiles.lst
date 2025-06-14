@@ -1,4 +1,9 @@
-/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/bd/ConexionMySQL.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/SQL/conexion.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/SQL/test.java
 /home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/com/mycompany/poomusicaapp/POOMusicaApp.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/dao/AlbumDAO.java
 /home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/interfaces/Inicio.java
-/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/interfaces/UsuarioI.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/interfaces/MainApp.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/interfaces/gui/TarjetaAlbum.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/model/Album.java
+/home/cybergato/development/projects/POO-Musica/POOMusicaApp/src/main/java/model/Pista.java
