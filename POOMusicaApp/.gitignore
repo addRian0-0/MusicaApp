@@ -1,0 +1,9 @@
+# Ignora archivos de configuración locales
+.env
+*.iml
+.idea/
+target/
+
+# Ignora otros archivos temporales
+*.log
+*.class
