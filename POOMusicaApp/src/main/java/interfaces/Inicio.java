@@ -30,7 +30,7 @@ public class Inicio extends javax.swing.JFrame {
         btnIniciarSesion.setText("INICIAR SESIÓN");
         btnIniciarSesion.setBackground(lilaClaro);
         btnIniciarSesion.setForeground(moradoFuerte);
-       btnIniciarSesion.setFont(new Font("SansSerif", Font.BOLD, 12));
+        btnIniciarSesion.setFont(new Font("SansSerif", Font.BOLD, 12));
         btnIniciarSesion.setFocusPainted(false);
         btnIniciarSesion.setBorder(BorderFactory.createLineBorder(moradoFuerte, 2));
         btnIniciarSesion.setContentAreaFilled(true);
@@ -123,7 +123,7 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btnIniciarSesionActionPerformed
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
