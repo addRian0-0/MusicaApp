@@ -1,6 +1,5 @@
 package dao;
 
-
 import SQL.conexion;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,28 +12,26 @@ import model.Album;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author cybergato
  */
 public class AlbumDAO {
-    
-    public List<Album> getAlbum(){
-        
+
+    public List<Album> getAlbum() {
+
         List<Album> lista = new ArrayList<>();
-        
+
         try {
 
             Connection conn = conexion.getConnection();
-            System.out.println("Conexion exitosa...");
 
             String query = "SELECT ID_ALBUM, NOMBRE_ALBUM, FECHA_LANZAMIENTO, ARTISTA, URL_ICONO FROM ALBUMES";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                
+
                 String id = rs.getString("ID_ALBUM");
                 String nombre = rs.getString("NOMBRE_ALBUM");
                 String fecha = rs.getString("FECHA_LANZAMIENTO");
@@ -43,7 +40,7 @@ public class AlbumDAO {
 
                 Album albumAdd = new Album(nombre, fecha, artista, id, urlIcon);
                 lista.add(albumAdd);
-                
+
             }
 
             rs.close();
@@ -53,9 +50,9 @@ public class AlbumDAO {
         } catch (Exception e) {
             System.out.println("Error al conectar la BD: " + e);
         }
-        
+
         return lista;
-        
+
     }
-    
+
 }

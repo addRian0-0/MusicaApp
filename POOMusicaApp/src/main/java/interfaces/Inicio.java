@@ -134,7 +134,13 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIniciarSesionActionPerformed
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
-        // TODO add your handling code here:
+       
+        AccesoUsuario registroScreen = new AccesoUsuario();
+        
+        this.dispose();
+        registroScreen.setVisible(true);
+        registroScreen.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnRegistroActionPerformed
 
     /**

@@ -29,7 +29,6 @@ public class TarjetaAlbum extends javax.swing.JPanel {
         anoLbl.setText(album.getFecha_lanzamiento());
 
         // Cargar imagen
-        System.out.println(album.getUrlIcon());
         if (album.getUrlIcon() != null && !album.getUrlIcon().isEmpty()) {
             SwingUtilities.invokeLater(() -> {
                 try {

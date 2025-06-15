@@ -10,33 +10,10 @@ package model;
  */
 public class Pista {
 
-    private enum TipoPista {
-        SENCILLO("Sencillo"),
-        ALBUM("Álbum"),
-        REMIX("Remix"),
-        LIVE("En Vivo"),
-        INSTRUMENTAL("Instrumental"),
-        OTRO("Otro");
-        private final String descripcion;
-
-        private TipoPista(String descripcion) {
-            this.descripcion = descripcion;
-        }
-
-        public String getDescripcion() {
-            return descripcion;
-        }
-
-        @Override
-        public String toString() {
-            return descripcion;
-        }
-    }
-
     private String idPista, nombreArtista, idAlbum, selloDiscografico, edicion, formato, nombrePista, genero, urlIcon;
-    private TipoPista tipoPista;
+    private String tipoPista;
 
-    public Pista(String idPista, String nombreArtista, String idAlbum, String selloDiscografico, String edicion, String formato, String nombrePista, String genero, String urlIcon, TipoPista tipoPista) {
+    public Pista(String idPista, String nombreArtista, String idAlbum, String selloDiscografico, String edicion, String formato, String nombrePista, String genero, String urlIcon, String tipoPista) {
         this.idPista = idPista;
         this.nombreArtista = nombreArtista;
         this.idAlbum = idAlbum;
@@ -121,11 +98,11 @@ public class Pista {
         this.urlIcon = urlIcon;
     }
 
-    public TipoPista getTipoPista() {
+    public String getTipoPista() {
         return tipoPista;
     }
 
-    public void setTipoPista(TipoPista tipoPista) {
+    public void setTipoPista(String tipoPista) {
         this.tipoPista = tipoPista;
     }
     
