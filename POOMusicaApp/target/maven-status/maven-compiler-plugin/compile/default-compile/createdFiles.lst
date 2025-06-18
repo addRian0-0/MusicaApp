@@ -34,6 +34,7 @@ interfaces/Inicio.class
 model/Album.class
 interfaces/gui/TarjetaCancion$2.class
 interfaces/MainApp$4.class
+Reproducir/Reproducir.class
 interfaces/AccesoUsuario$1.class
 interfaces/AgregarData$1.class
 interfaces/Inicio$2.class

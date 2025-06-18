@@ -4,6 +4,7 @@
  */
 package interfaces.gui;
 
+import Reproducir.Reproducir;
 import java.awt.BorderLayout;
 import java.awt.Image;
 import java.net.URL;
@@ -19,10 +20,10 @@ import model.Pista;
  */
 public class TarjetaCancion extends javax.swing.JPanel {
 
-    /**
-     * Creates new form TarjetaCancion
-     */
+    private Pista pista;
+    
     public TarjetaCancion(Pista pista) {
+        this.pista = pista;
         initComponents();
         nombreCancionLbl.setText(pista.getNombrePista());
         nombreArtistaLbl.setText(pista.getNombreArtista());
@@ -186,7 +187,8 @@ public class TarjetaCancion extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void reproducirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reproducirBtnActionPerformed
-        // TODO add your handling code here:
+        Reproducir rep = new Reproducir();
+        rep.Reproducir(this.pista.getUrlPista());
     }//GEN-LAST:event_reproducirBtnActionPerformed
 
     private void agregarLblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarLblActionPerformed

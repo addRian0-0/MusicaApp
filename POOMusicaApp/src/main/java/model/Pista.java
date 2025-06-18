@@ -12,8 +12,9 @@ public class Pista {
 
     private String idPista, nombreArtista, idAlbum, selloDiscografico, edicion, formato, nombrePista, genero, urlIcon;
     private String tipoPista;
+    private String urlPista;
 
-    public Pista(String idPista, String nombreArtista, String idAlbum, String selloDiscografico, String edicion, String formato, String nombrePista, String genero, String urlIcon, String tipoPista) {
+    public Pista(String idPista, String nombreArtista, String idAlbum, String selloDiscografico, String edicion, String formato, String nombrePista, String genero, String urlIcon, String tipoPista, String urlPista) {
         this.idPista = idPista;
         this.nombreArtista = nombreArtista;
         this.idAlbum = idAlbum;
@@ -24,7 +25,18 @@ public class Pista {
         this.genero = genero;
         this.urlIcon = urlIcon;
         this.tipoPista = tipoPista;
+        this.urlPista = urlPista;
     }
+
+    public String getUrlPista() {
+        return urlPista;
+    }
+
+    public void setUrlPista(String urlPista) {
+        this.urlPista = urlPista;
+    }
+
+    
 
     public String getIdPista() {
         return idPista;

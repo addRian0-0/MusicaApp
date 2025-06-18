@@ -26,7 +26,7 @@ public class PistaDAO {
 
             Connection conn = conexion.getConnection();
 
-            String query = "SELECT ID_PISTA, TIPO_PISTA, NOMBRE_ARTISTA, ID_ALBUM, SELLO_DISCOGRAFICO, FORMATO, EDICION, NOMBRE_PISTA, GENERO, URL_ICONO FROM PISTAS";
+            String query = "SELECT ID_PISTA, TIPO_PISTA, NOMBRE_ARTISTA, ID_ALBUM, SELLO_DISCOGRAFICO, FORMATO, EDICION, NOMBRE_PISTA, GENERO, URL_ICONO, URL_PISTA FROM PISTAS";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
 
@@ -42,8 +42,9 @@ public class PistaDAO {
                 String nombrePista = rs.getString("NOMBRE_PISTA");
                 String genero = rs.getString("GENERO");
                 String urlIcon = rs.getString("URL_ICONO");
+                String urlPista = rs.getString("URL_PISTA");
 
-                Pista pistaAdd = new Pista(id, nombreArtista, idAlbum,  selloDiscografico, formato, edicion, nombrePista, genero, urlIcon, tipoPista);
+                Pista pistaAdd = new Pista(id, nombreArtista, idAlbum,  selloDiscografico, formato, edicion, nombrePista, genero, urlIcon, tipoPista, urlPista);
                 listaPistas.add(pistaAdd);
 
             }
